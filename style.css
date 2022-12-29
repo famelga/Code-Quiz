@@ -1,7 +1,27 @@
 body {
-    background-color: rgb(220, 194, 92);
-    display: flex;
-    justify-content: center;
+    background-color: #ffffff;
+
 }
 
+header {
+    font-style: courier;
+    font-size: x-large;
+    text-align: center;
+    padding: 20px;
+    background-color: pink;
+    
+}
 
+.start {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding-top: 150px;
+}
+
+button {
+    font-size: xx-large;
+    background-color: pink;
+    font-weight: bold;
+    
+}

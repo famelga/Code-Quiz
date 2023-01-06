@@ -19,11 +19,11 @@ function begin() {
     // unhide clock
     timerCount.style.display = "block";
     // start timer
-    timerId = setinterval(countDown, 1000);
+    timerId = setInterval(countDown, 1000);
     // timerEl.textContent = "60";
     // set text content fron 0 to 60
     // get a question
-    getQuestion()
+    // getQuestion()
 
     countDown()
     // questions()
@@ -56,7 +56,7 @@ function getQuestion() {
     // answersEl.innerhtml = "";
     // for loop to loop over choices and creates button for each....append to answersEl
     for (var i = 0; i < questions.length; i++) {
-        text += i;
+        ;
     }
 }
 

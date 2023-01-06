@@ -1,8 +1,9 @@
 var startEl = document.getElementById("start");
 var timerCount = document.querySelector("#clock");
 var time = 60;
+console.log(typeof time)
 var questionIndex = 0;
-var timerId;
+// var timerId;
 var questionsEl = document.getElementById("questions");
 var timerEl = document.getElementById("time");
 var answersEl = document.getElementById("answers")
@@ -18,19 +19,26 @@ function begin() {
     // unhide clock
     timerCount.style.display = "block";
     // start timer
-    timerId = setinterval(countDown, 1000)
-    timerEl.textContent = 60;
+    // timerId = setinterval(countDown, 1000)
+    // timerEl.textContent = "60";
     // set text content fron 0 to 60
     // get a question
-    getQuestions()
+    getQuestion()
 
-    // countDown()
+    countDown()
     // questions()
     // answers()
   
 }
 
 function countDown() {
+    var timerId = setInterval(function() {
+        time--;
+    timerEl.textContent = time;
+    // if (time > 0) {
+    //     clearInterval(timerId);
+    // }
+    }, 1000)
     // decrement time by 1; time--
     // reset text content (timerEl.textcontent = time)
     // if time<= 0 = execute gameOver function
@@ -39,12 +47,17 @@ function countDown() {
 
 
 function getQuestion() {
-    var currentQ = questionsEl[questionIndex];
+    // var currentQ = questionsEl[questionIndex];
+    var currentQ = questions[i];
+
     var TitleEl= document.getElementById("questionTitle");
     TitleEl.textcontent= currentQ.title;
     // clear answersEl.innerhtml = "" to reset
     // answersEl.innerhtml = "";
     // for loop to loop over choices and creates button for each....append to answersEl
+    for (var i = 0; i < questions.length; i++) {
+        text += i;
+    }
 }
 
 function userChoice() {

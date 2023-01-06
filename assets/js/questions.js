@@ -4,9 +4,24 @@ var questions = [
         choices: ["World Wide Web", "hyperlink", "HyperText Markup Language", "Javascript"],
         answer: "HyperText Markup Language"
     },
-    // {
-    //     title:
-    //     choices: 
-    //     answer:
-    // },
+    {
+        title: "What are the two types of loops?"
+        choices: ["While and For", "Hula and Fruit", "Whale and Far", "Id and Class"],
+        answer: "While and For"
+    },
+    {
+        title:
+        choices: 
+        answer:
+    },
+    {
+        title:
+        choices: 
+        answer:
+    },
+    {
+        title:
+        choices: 
+        answer:
+    },
 ]

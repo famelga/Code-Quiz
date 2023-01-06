@@ -10,18 +10,18 @@ var questions = [
         answer: "While and For"
     },
     {
-        title:
-        choices: 
-        answer:
+        title: "Which is not a coding language?"
+        choices: ["HTML", "French", "CSS", "JavaScript"],
+        answer: "French"
     },
     {
-        title:
-        choices: 
-        answer:
+        title: "What is a '#' is used to represent?"
+        choices: ["id", "class", "tag", "function"]
+        answer: "id"
     },
     {
-        title:
-        choices: 
-        answer:
+        title: "Which type of variable would true represent?"
+        choices: ["number", "string", "bigint", "boolean"],
+        answer: "boolean"
     },
 ]

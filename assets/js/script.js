@@ -3,7 +3,7 @@ var timerCount = document.querySelector("#clock");
 var time = 60;
 console.log(typeof time)
 var questionIndex = 0;
-// var timerId;
+var timerId;
 var questionsEl = document.getElementById("questions");
 var timerEl = document.getElementById("time");
 var answersEl = document.getElementById("answers")
@@ -19,7 +19,7 @@ function begin() {
     // unhide clock
     timerCount.style.display = "block";
     // start timer
-    // timerId = setinterval(countDown, 1000)
+    timerId = setinterval(countDown, 1000);
     // timerEl.textContent = "60";
     // set text content fron 0 to 60
     // get a question
@@ -32,13 +32,13 @@ function begin() {
 }
 
 function countDown() {
-    var timerId = setInterval(function() {
+    // var timerId = setInterval(function() {
         time--;
     timerEl.textContent = time;
     // if (time > 0) {
     //     clearInterval(timerId);
     // }
-    }, 1000)
+    // }, 1000)
     // decrement time by 1; time--
     // reset text content (timerEl.textcontent = time)
     // if time<= 0 = execute gameOver function
@@ -47,8 +47,8 @@ function countDown() {
 
 
 function getQuestion() {
-    // var currentQ = questionsEl[questionIndex];
-    var currentQ = questions[i];
+    var currentQ = questionsEl[questionIndex];
+    // var currentQ = questions[questionIndex];
 
     var TitleEl= document.getElementById("questionTitle");
     TitleEl.textcontent= currentQ.title;

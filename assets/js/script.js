@@ -22,7 +22,7 @@ function begin() {
     timerEl.textContent = 60;
     // set text content fron 0 to 60
     // get a question
-    questions()
+    getQuestions()
 
     // countDown()
     // questions()
@@ -39,10 +39,11 @@ function countDown() {
 
 
 function getQuestion() {
-    var currentQ = questions[questionIndex]
-    // create var TitleEl= document.getElementById("questionTitle")
-    // TitleEl.textcontent= currentQuestion.Title
+    var currentQ = questionsEl[questionIndex];
+    var TitleEl= document.getElementById("questionTitle");
+    TitleEl.textcontent= currentQ.title;
     // clear answersEl.innerhtml = "" to reset
+    // answersEl.innerhtml = "";
     // for loop to loop over choices and creates button for each....append to answersEl
 }
 

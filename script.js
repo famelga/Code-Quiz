@@ -1,33 +1,47 @@
-var start=document.getElementById("start")
+var start = document.getElementById("start");
+var timerCount = document.querySelector(".clock");
 
 function begin() {
     console.log("here")
-    
-  
+    // countDown()
+    // questions()
+    // answers()
+    timerCount = 60;
+
+    function countDown() {
+        var timeLeft = 60;
+        var timeInterval = setInterval(function () {
+            timeLeft--;
+            timerCount.textContent = timeLeft;
+        }, 60000)
+    }
 }
 
-function countDown() {
 
-}
 
-function questions() {
+// function questions() {
+//     var answerChoice;
+//     var quest = [{
+//         questions: "What does html stand for?",
+//         answerChoice: ["World Wide Web", "hyperlink", "HyperText Markup Language", "Javascript"]}
+//         // , "Which is not an accessible tag?", "Which language is used for styling?", "Which is an example of an array?", "You need a _______ link for a live site."]
+// }
 
-}
+// function answers() {
 
-function answers() {
+// }
 
-}
+// function gameOver() {
 
-function gameOver() {
+// }
 
-}
+// function score() {
 
-function score() {
+// }
 
-}
+// function saveScore() {
 
-function saveScore() {
-
-}
+// }
 
 start.addEventListener("click", begin)
+console.log("begin")

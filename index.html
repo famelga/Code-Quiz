@@ -15,15 +15,27 @@
     </header>
 
     <main>
-        <div class="start">
-            <button type="button" id="start">Begin Quiz</button>
+        <div id="clock" class="hide">Time: <span id="Time">0</span></div>
+
+        <div id="start">
+            <h1>Coding Quiz Challenge</h1>
+            <!-- <p>Instructions</p> -->
+            <button id="start">Begin Quiz</button>
         </div>
 
-        <p class="question"></p>
+        <!-- <h4>Time Remaining: <span class="clock">60</span> seconds</h4> -->
+        <div id="questions" class="hide">
+            <h2 id="questionTitle"></h2>
 
-        <div class="answers"></div>
+            <div id="answers"></div>
+        </div>
 
-        <button id="btn"></button>
+        <div id="end-screen" class="hide">
+            <h2>Quiz Complete!</h2>
+            <p>Your final score is: <span id="final-score"></span></p>
+            <p>Enter your initials: <input type="text" id="initials"/></p>
+            <button id="submit">Submit</button>
+        </div>
 
         <!-- <form>
             <input type="radio" id="a1" value="">

@@ -38,3 +38,7 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+.hide {
+    display: none;
+}

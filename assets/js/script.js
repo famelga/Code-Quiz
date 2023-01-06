@@ -1,23 +1,26 @@
 var start = document.getElementById("start");
-var timerCount = document.querySelector(".clock");
+var timerCount = document.querySelector("#clock");
+var time = 60;
+var questionIndex = 0;
+var timerId;
+var questionsEl = document.getElementById("questions");
+var timerEl = document.getElementById("time");
+var answersEl = document.getElementById("answers")
+var submitEl = document.getElementById("submit");
+var initialsEl = document.getElementById("initials");
 
 function begin() {
     console.log("here")
     // countDown()
     // questions()
     // answers()
-    timerCount = 60;
-
-    function countDown() {
-        var timeLeft = 60;
-        var timeInterval = setInterval(function () {
-            timeLeft--;
-            timerCount.textContent = timeLeft;
-        }, 60000)
-    }
+  
 }
 
-
+function countDown() {
+    
+    
+}
 
 // function questions() {
 //     var answerChoice;

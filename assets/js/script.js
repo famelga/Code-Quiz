@@ -22,7 +22,7 @@ function begin() {
     timerId = setInterval(countDown, 1000);
     // timerEl.textContent = "60";
     // set text content fron 0 to 60
-    // get a question
+    // get a questiotep n
     // getQuestion()
 
     countDown()
@@ -35,23 +35,23 @@ function countDown() {
     // var timerId = setInterval(function() {
         time--;
     timerEl.textContent = time;
-    // if (time > 0) {
-    //     clearInterval(timerId);
-    // }
-    // }, 1000)
+    if (time === 0) {
+        clearInterval(timerId);
+        gameOver();
+    }
     // decrement time by 1; time--
     // reset text content (timerEl.textcontent = time)
     // if time<= 0 = execute gameOver function
-    
 }
 
 
 function getQuestion() {
-    var currentQ = questionsEl[questionIndex];
+    var currentQ = questionsEl[questionIndex].questions;
     // var currentQ = questions[questionIndex];
 
-    var TitleEl= document.getElementById("questionTitle");
-    TitleEl.textcontent= currentQ.title;
+    var TitleEl = document.getElementById("questionTitle");
+    TitleEl.textContent = currentQ.title;
+    questionsEl.append(currentQ);
     // clear answersEl.innerhtml = "" to reset
     // answersEl.innerhtml = "";
     // for loop to loop over choices and creates button for each....append to answersEl
@@ -64,9 +64,9 @@ function userChoice() {
     // 
 }
 
-// function gameOver() {
+function gameOver() {
 
-// }
+}
 
 // function score() {
 

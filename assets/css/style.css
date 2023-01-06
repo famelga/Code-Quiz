@@ -12,12 +12,15 @@ header {
     
 }
 
-.start {
+#begin {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 50px;
+    flex-direction: column;
     padding-top: 150px;
 }
+
 
 button {
     font-size: xx-large;
@@ -25,19 +28,15 @@ button {
     font-weight: bold;   
 }
 
-.question {
-
+#questions {
+    display: flex;
 }
 
-.answers {
+
+/* .answers {
     display: flex;
 
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
+} */
 
 .hide {
     display: none;

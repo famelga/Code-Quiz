@@ -1,4 +1,4 @@
-var start = document.getElementById("start");
+var startEl = document.getElementById("start");
 var timerCount = document.querySelector("#clock");
 var time = 60;
 var questionIndex = 0;
@@ -8,15 +8,21 @@ var timerEl = document.getElementById("time");
 var answersEl = document.getElementById("answers")
 var submitEl = document.getElementById("submit");
 var initialsEl = document.getElementById("initials");
+var beginEl = document.getElementById("begin");
 
 function begin() {
     // hide start
+    beginEl.style.display = "none";
     // unhide qs
+    questionsEl.style.display = "block";
     // unhide clock
+    timerCount.style.display = "block";
     // start timer
-    // timerId = setinterval(countDown, 1000)
+    timerId = setinterval(countDown, 1000)
+    timerEl.textContent = 60;
     // set text content fron 0 to 60
     // get a question
+    questions()
 
     // countDown()
     // questions()
@@ -56,5 +62,4 @@ function userChoice() {
 
 // }
 
-start.addEventListener("click", begin)
-console.log("begin")
+startEl.addEventListener("click", begin)
